@@ -22,27 +22,32 @@
       href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <nav class="navbar">
-      <img src="/images/logo.svg" alt="logo" />
-      <img
-        src="./images/icon-hamburger.svg"
-        alt="menu"
-        class="hamburger_menu"
-      />
-      <ul class="navbar__links" id="navbar">
-        <li class="links"><a href="#">How we work</a></li>
-        <li class="links"><a href="#">Blog</a></li>
-        <li class="links"><a href="#">Account</a></li>
-        <li class="button"><a href="#">View plans</a></li>
-      </ul>
-    </nav>
+    
 
     <main class="container">
+      <nav class="navbar">
+        <img src="/images/logo.svg" alt="logo" />
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="menu"
+          class="hamburger_menu"
+        />
+        <ul class="navbar__links" id="navbar">
+          <li class="links"><a href="#">How we work</a></li>
+          <li class="links"><a href="#">Blog</a></li>
+          <li class="links"><a href="#">Account</a></li>
+          <li class="button"><a href="#">View plans</a></li>
+        </ul>
+      </nav>
       <div class="hero">
-        <picture>
-          <img src="./images/image-intro-mobile.jpg" alt="intro-mobile" />
+        <div class="hero_container">
+          <picture class="hero__image">
+          <source media="(min-width: 400px)" srcset="./images/image-intro-desktop.jpg">
+          <img src="./images/image-intro-desktop.jpg" alt="intro-mobile" />
         </picture>
         <header class="header">
           <h1 class="header__title">Humanizing your insurance.</h1>
@@ -53,6 +58,8 @@
           </p>
           <a href="#" class="button second">View plans</a>
         </header>
+        </div>
+        
       </div>
 
       <section class="diff">
